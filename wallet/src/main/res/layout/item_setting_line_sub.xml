@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/one_dp"
+    >
+
+    <View
+        android:layout_marginLeft="@dimen/padding_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_dp"
+        android:background="@color/tx_bottom_line" />
+</FrameLayout>

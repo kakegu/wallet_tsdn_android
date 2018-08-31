@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/t_layout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_main"
+        android:paddingRight="@dimen/padding_main">
+
+        <TextView
+            android:id="@+id/mnemonic_restore_title"
+            style="@style/t_title"
+            android:layout_marginBottom="@dimen/line_gap_14"
+            android:text="@string/me_clone_sync_title" />
+
+        <TextView
+            android:id="@+id/mnemonic_restore_msg"
+            style="@style/t_text_msg"
+            android:layout_below="@id/mnemonic_restore_title"
+            android:text="@string/click_to_sync"
+            android:textColor="@color/font_gray_amount" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingTop="54dp"
+            android:layout_above="@id/full_sync_warning"
+            android:layout_below="@id/mnemonic_restore_msg"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pp"
+                android:layout_width="@dimen/contacts_empty_width"
+                android:layout_height="@dimen/contacts_empty_width"
+                android:src="@drawable/png_clone_sync" />
+
+        </FrameLayout>
+
+        <WebView
+            android:id="@+id/full_sync_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/me_clone_sync_btn"
+            android:layout_marginBottom="@dimen/line_gap_12" />
+
+        <Button
+            android:id="@+id/me_clone_sync_btn"
+            style="@style/t_btn_white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_bottom_margin"
+            android:text="@string/me_clone_sync_btn" />
+
+
+    </RelativeLayout>
+
+</layout>

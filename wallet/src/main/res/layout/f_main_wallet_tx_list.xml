@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:id="@+id/summary_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/page_margin_26"
+        android:paddingRight="@dimen/page_margin_26">
+
+        <TextView
+            android:id="@+id/credential_name"
+            style="@style/t_title"
+            android:layout_marginBottom="32dp"
+            android:text="@string/place_holder" />
+
+        <include layout="@layout/l_amount_summary" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_gap_10"
+        android:layout_below="@+id/summary_bar"
+        android:background="@color/tx_list_bg" />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_gap_64"
+        android:layout_below="@+id/line1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_transfer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/ic_24"
+                android:layout_height="@dimen/ic_24"
+                android:layout_marginRight="@dimen/one_dp"
+                android:src="@drawable/ic_tx_send" />
+
+            <TextView
+                style="@style/blue_bold_16"
+                android:text="@string/wallet_transfer_btn" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/home_line_middle" />
+
+        <LinearLayout
+            android:id="@+id/btn_receive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/ic_24"
+                android:layout_height="@dimen/ic_24"
+                android:layout_marginRight="@dimen/one_dp"
+                android:src="@drawable/ic_tx_receive" />
+
+            <TextView
+                style="@style/blue_bold_16"
+                android:text="@string/wallet_receive_btn" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tx_title_height"
+        android:layout_below="@+id/btns"
+        android:background="@color/tx_list_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/page_margin_26"
+        android:text="@string/tx_list_title"
+        android:textColor="@color/font_gray_amount" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tx_title">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tx_list"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:background="@color/tx_list_bg"
+            android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

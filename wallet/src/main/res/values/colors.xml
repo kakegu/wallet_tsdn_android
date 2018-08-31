@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorPrimary">#03A9F4</color>-->
+    <!--<color name="colorPrimaryDark">#0288D1</color>-->
+    <!--<color name="colorAccent">#FF9800</color>-->
+
+    <color name="bg_white">#FFFFFFFF</color>
+
+
+    <color name="t_title_black">#FF111111</color>
+
+    <color name="t_f_gray">#bbb</color>
+    <color name="t_f_white">#FFFFFFFF</color>
+
+    <color name="t_white">#FFFFFFFF</color>
+    <color name="t_blue">#FF0052CC</color>
+    <color name="t_hint">#999999</color>
+
+    <color name="t_bottom_line">#DDDDDD</color>
+    <color name="t_err">#EF2B2B</color>
+
+    <color name="t_strength_none">#F2F2F2</color>
+
+    <color name="t_strength_weak">#4B0052CC</color>
+    <color name="t_strength_general">#960052CC</color>
+    <color name="t_strength_strong">#E40052CC</color>
+
+    <color name="t_text">#333333</color>
+
+    <color name="bg_dialog">#FCFCFC</color>
+    <color name="dialog_msg">#030303</color>
+
+    <color name="t_blue_gray">#4B5461</color>
+
+    <color name="home_line">#C6CDD7</color>
+    <color name="home_line_middle">#E9EFF7</color>
+
+    <color name="title_bar_text">#111111</color>
+
+    <color name="font_gray_amount">#666666</color>
+
+    <color name="tx_list_bg">#F6F7F9</color>
+    <color name="tx_bottom_line">#EEEEEE</color>
+
+    <color name="tx_time">#BBBBBB</color>
+
+    <color name="tx_red">#E33B1B</color>
+
+    <color name="tag_observer_wallet_line">#F6782F</color>
+    <color name="tag_observer_wallet_bg">#FFF8F4</color>
+
+    <color name="bg_msg_icon_me">#EAF2FF</color>
+
+    <color name="bg_msg_counter">#FF4D46</color>
+
+    <color name="page_bg_set_amount">#D3DFF1</color>
+    <color name="page_bg">#F0D3DFF1</color>
+    <color name="page_title_bg">#F6F7F9</color>
+
+    <color name="line_in_dialog">#3A4D4D4D</color>
+    <color name="btn2_text_in_dialog">#FF007AFF</color>
+
+    <color name="keyboard_bg">#CFD4DA</color>
+    <color name="keyboard_key_bg">#FFFFFF</color>
+    <color name="keyboard_font_color">#FF000000</color>
+
+    <color name="f_tx_unconfirmed">#EE7A23</color>
+    <color name="f_msg_date">#BDCADB</color>
+    <color name="bg_msg_input">#F8F9FB</color>
+
+    <color name="action_text">#0076FF</color>
+
+    <color name="f_chat_message_from_system">#8EA0B8</color>
+
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ttt="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <org.trustnote.wallet.widget.PageHeader
+            android:id="@+id/page_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ttt:ttt_icon="@drawable/ic_dialog_my_rcv_address"
+            ttt:ttt_title="@string/receive_title" />
+
+        <TextView
+            android:id="@+id/receive_address_text"
+            style="@style/t_text_msg"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/line_gap_20"
+            android:layout_marginTop="17dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/place_holder_address" />
+
+        <include
+            android:id="@+id/qr_code"
+            layout="@layout/l_qr_code" />
+
+        <org.trustnote.wallet.widget.TMnAmount
+            android:id="@+id/receive_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qr_code"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/receive_clear_amount"
+            style="@style/t_url"
+            android:layout_marginTop="@dimen/line_gap_20"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/receive_clear_amount" />
+
+        <TextView
+            android:id="@+id/receive_setup_amount"
+            android:layout_marginTop="@dimen/line_gap_14"
+            style="@style/t_url"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/receive_setup_amount" />
+
+        <Button
+            android:id="@+id/receive_btn_copy"
+            style="@style/t_btn_blue"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/line_gap_32"
+            android:layout_marginRight="@dimen/line_gap_32"
+            android:layout_marginTop="@dimen/line_gap_32"
+            android:layout_marginBottom="@dimen/line_gap_40"
+            android:text="@string/receive_btn_copy" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

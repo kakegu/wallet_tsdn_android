@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="29dp"
+        android:paddingBottom="@dimen/line_gap_40"
+        android:paddingLeft="@dimen/bg_dialog_padding_left"
+        android:paddingRight="@dimen/bg_dialog_padding_left">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/ic_gabage_width"
+                android:layout_height="@dimen/ic_gabage_width"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_garbage_bin" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/msg"
+            android:gravity="left"
+            style="@style/t_text_dialog_msg"
+            android:textSize="@dimen/text_14"
+            android:layout_width="match_parent"
+            android:lineSpacingMultiplier="1.25"
+            android:paddingBottom="@dimen/line_gap_24"
+            android:paddingTop="@dimen/line_gap_18"
+            android:text="@string/me_wallet_remove_wallet_msg" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/first_button"
+                style="@style/t_btn_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textSize="@dimen/dialog_btn_font" />
+
+            <View
+                android:layout_width="@dimen/line_gap_7"
+                android:layout_height="@dimen/one_dp" />
+
+            <Button
+                android:id="@+id/second_button"
+                style="@style/t_btn_blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/confirm"
+                android:textSize="@dimen/dialog_btn_font" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

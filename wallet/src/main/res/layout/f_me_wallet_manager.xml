@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/t_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tx_list_bg"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/padding_main"
+        android:paddingRight="@dimen/padding_main">
+
+        <RelativeLayout
+            android:id="@+id/me_wallet_manager_title"
+            android:layout_marginBottom="@dimen/line_gap_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/me_wallet_manager"
+                style="@style/t_title"
+                android:layout_gravity="left"
+                android:text="@string/me_wallet_manager"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/me_wallet_add"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/line_gap_6"
+                android:paddingBottom="@dimen/line_gap_6"
+                android:paddingLeft="@dimen/line_gap_32"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/ic_26"
+                    android:layout_height="@dimen/ic_26"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/me_wallet_add" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/wallet_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/me_wallet_manager_title"
+            android:layout_marginTop="@dimen/line_gap_20"
+            android:scrollbars="vertical" />
+
+
+    </RelativeLayout>
+
+</layout>

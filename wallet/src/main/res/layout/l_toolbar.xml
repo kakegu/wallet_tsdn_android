@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/toolbar"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/myaction_bar_height"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/padding_main"
+        android:layout_marginRight="22dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/toolbar_wallet_summary_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/toolbar_wallet_summary_title"
+                style="@style/t_text_amount_subtitle"
+                android:text="@string/wallet_amount_subtitle" />
+
+            <View
+                android:layout_width="@dimen/line_gap_10"
+                android:layout_height="@dimen/one_dp" />
+
+            <org.trustnote.wallet.widget.TMnAmount
+                android:id="@+id/toolbar_wallet_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/toolbar_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wallet_toolbar_title"
+            android:textColor="@color/title_bar_text"
+            android:textSize="@dimen/text_20" />
+        <FrameLayout
+            android:id="@+id/ic_quick_action_container"
+            android:paddingLeft="@dimen/line_gap_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/ic_quick_action"
+                android:src="@drawable/ic_quick_action"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+
+        </FrameLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

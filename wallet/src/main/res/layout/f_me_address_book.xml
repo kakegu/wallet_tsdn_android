@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/t_layout"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/t_title"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/padding_main"
+            android:text="@string/address_book_title" />
+
+        <ImageView
+            android:id="@+id/ic_add"
+            android:layout_width="@dimen/ic_26"
+            android:layout_height="@dimen/ic_26"
+            android:layout_alignBottom="@id/title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_main"
+            android:src="@drawable/ic_address_book_add" />
+
+        <View
+            android:layout_marginTop="@dimen/line_gap_24"
+            android:id="@+id/gap_for_list"
+            android:background="@color/tx_list_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_gap_10"
+            android:layout_below="@id/title" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/gap_for_list"
+            android:background="@color/tx_list_bg"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+</layout>

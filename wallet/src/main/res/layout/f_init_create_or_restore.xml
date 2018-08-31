@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/t_layout"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_above="@id/btn_new_seed"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/line_gap_18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/logo_width_2"
+                    android:layout_height="@dimen/logo_height_2"
+                    android:scaleType="fitXY"
+                    android:layout_marginBottom="@dimen/line_gap_16"
+                    android:src="@drawable/logo" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/slogan"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="@string/ttt_slogan"-->
+                    <!--android:textColor="@color/t_blue"-->
+                    <!--android:textSize="22sp" />-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_new_seed"
+            style="@style/t_btn_blue"
+            android:layout_above="@id/btn_restore_seed"
+            android:text="@string/create_seed" />
+
+        <Button
+            android:id="@+id/btn_restore_seed"
+            style="@style/t_btn_white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/page_margin_bottom"
+            android:layout_marginTop="@dimen/btn_gap_24"
+            android:text="@string/restore_seed" />
+
+    </RelativeLayout>
+
+</layout>
